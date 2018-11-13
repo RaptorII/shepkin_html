@@ -231,7 +231,9 @@ export function pug() {
 export function scss() {
 	return gulp.src([
 		'src/scss/*.scss',
+		'src/scss/*.sass',
 		'!src/scss/_*.scss',
+		'!src/scss/_*.sass',
 	])
 		.pipe($.plumber({
 			errorHandler,
@@ -341,7 +343,7 @@ export function watch() {
 			}
 		});
 
-	gulp.watch('src/scss/**/*.scss', scss);
+	gulp.watch(['src/scss/**/*.scss', 'src/scss/**/*.sass'], scss);
 }
 
 export function serve() {

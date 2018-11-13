@@ -7,3 +7,14 @@
 @import "fonts";
 @import "vendor";
 @import "base";
+
+// Main
+@import "parts/main/header";
+@import "parts/main/footer";
+
+// Partials
+@import "parts/partials/slider";
+@import "parts/partials/map";
+@import "parts/partials/news";
+@import "parts/partials/partners";
+@import "parts/partials/theatre";

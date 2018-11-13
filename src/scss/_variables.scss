@@ -1,9 +1,24 @@
 // stylelint-disable scss/dollar-variable-empty-line-before
 
-// COLORS
+// foundation
+$global-width: 1440px;
+$breakpoints: (small: 0, medium: 640px, large: 768px, xlarge: 990px, xxlarge: 1200px);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
+// COLORS
 $color-black: #000;
 $color-white: #fff;
 
+$color-grey: #e3e3e3;
+$color-light-grey: #c7c7c7;
+$color-dlight-grey: #d0d9dd;
+$color-dark-grey: #6b6b6b;
+$color-ddark-grey: #808080;
+
+$color-ddark-green: #212e35;
+$color-dark-green: #263238;
+
+$color-red: #c80000;
+
 // FONTS
-$font-family-roboto: 'Roboto', sans-serif;
+// $font-family-roboto: 'Roboto', sans-serif;
