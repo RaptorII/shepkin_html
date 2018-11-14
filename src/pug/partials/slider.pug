@@ -1,10 +1,22 @@
 .slider
-    .grid-container
-        .grid-x
-            .fade
-                .slide
-                    img(src="images/1.jpg")
-                .slide
-                    img(src="images/1.jpg")
-                .slide
-                    img(src="images/1.jpg")
+    .fade
+
+        .slide
+            .grid-container
+                .grid-x
+                    .cell.small-12.large-4
+                        .slide__txt
+                            h2
+                                | some txt
+                            p
+                                | lorem ipsum sit amet dolor
+
+            .slide__img
+                img(src="images/mainSlider/1.jpg" alt="...")
+
+        .slide
+            img(src="images/mainSlider/1.jpg")
+
+        .slide
+            img(src="images/mainSlider/1.jpg")
+
