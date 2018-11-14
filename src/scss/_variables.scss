@@ -1,6 +1,6 @@
 // stylelint-disable scss/dollar-variable-empty-line-before
 
-// foundation
+// Foundation
 $global-width: 1440px;
 $breakpoints: (small: 0, medium: 640px, large: 768px, xlarge: 990px, xxlarge: 1200px);
 $breakpoint-classes: (small medium large xlarge xxlarge);
@@ -18,7 +18,11 @@ $color-ddark-grey: #808080;
 $color-ddark-green: #212e35;
 $color-dark-green: #263238;
 
-$color-red: #c80000;
+$color-red: #c70300;
+
+// Transition
+$trans-main: all 0.3s ease-out;
 
 // FONTS
-// $font-family-roboto: 'Roboto', sans-serif;
+$font-open-sans: 'OpenSans', sans-serif;
+$font-open-sans-condensed: 'OpenSansCondensed', sans-serif;

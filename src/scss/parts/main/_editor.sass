@@ -1,0 +1,113 @@
+.editor
+  &.table-responsive
+    min-height: .01%
+    overflow-x: auto
+
+  table
+    width: 100%
+    max-width: 100%
+    margin-bottom: 20px
+    background-color: transparent
+    border-spacing: 0
+    border-collapse: collapse
+    background: $color-white
+    tr
+      border: 0
+      td
+        border: 0
+        padding: 10px 5px
+        text-align: center
+        color: $color-dark-green
+      td:nth-child(1)
+        text-align: left
+        padding-left: 30px
+    tr:nth-child(1)
+      font-weight: 700
+    tr:nth-child(2n)
+      background: $color-ddark-green
+
+  .table-scroll
+    padding: 20px
+    margin: 20px 0 90px 0
+    overflow-x: scroll
+
+  p
+    color:  $color-dark-green
+    font-size: 16px
+    font-weight: 400
+    line-height: 28px
+    margin: 0
+    padding: 0
+    + p
+      margin: 10px 0 0 0
+
+  img
+    box-sizing: border-box
+    display: block
+    max-width: 100%
+    margin: 20px auto
+
+  img[align="right;"],
+  img[style="float: right;"],
+  img[style="float:right;"],
+  img[style="float: right"]
+    margin: 0 0 20px 20px
+
+  img[align="left;"],
+  img[style="float: left;"],
+  img[style="float:left;"],
+  img[style="float: left"]
+    margin: 0 20px 20px 0
+
+  ul, ol
+    padding-left: 15px
+    list-style: square outside
+
+    li
+      position: relative
+      padding-bottom: 15px
+      &:before, &:after
+        content: none
+
+  strong
+    font-weight: 700
+
+  .clear
+    @include clearfix()
+
+  .bg-clr-yellow
+    padding: 30px 10%
+
+  h2
+    font-size: 32px
+
+  h3
+    font-size: 28px
+
+  h4
+    font-size: 22px
+
+  h5
+    font-size: 18px
+
+  h6
+    font-size: 16px
+
+@media screen and (max-width: 768px)
+  .editor
+    &.table-responsive
+      width: 100%
+      margin-bottom: 15px
+      overflow-y: hidden
+      -ms-overflow-style: -ms-autohiding-scrollbar
+      border: 1px solid #ddd
+
+    img[align="right;"],
+    img[style="float: right;"],
+    img[style="float:right;"],
+    img[style="float: right"],
+    img[align="left;"],
+    img[style="float: left;"],
+    img[style="float:left;"],
+    img[style="float: left"]
+      float: unset

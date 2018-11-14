@@ -1,1 +1,43 @@
 //@import url('https://fonts.googleapis.com/css?family=Roboto:500,900&subset=cyrillic');
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBold.woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Monserat";
+  src: url("../fonts/Montserrat-Light.woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "OpenSansCondensed";
+  src: url("../fonts/OpenSansCondensed-Light.woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "OpenSansCondensed";
+  src: url("../fonts/OpenSansCondensed-Bold.woff");
+  font-style: normal;
+  font-weight: 600;
+}

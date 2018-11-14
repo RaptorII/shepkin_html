@@ -5,14 +5,18 @@
 @import "mixins";
 @import "sprites";
 @import "fonts";
-@import "vendor";
+@import "vendor/slick";
 @import "base";
+@import "parts/links";
 
 // Main
 @import "parts/main/header";
+@import "parts/main/menu";
 @import "parts/main/footer";
+@import "parts/main/editor";
 
 // Partials
+@import "parts/partials/toggle";
 @import "parts/partials/slider";
 @import "parts/partials/map";
 @import "parts/partials/news";

@@ -1,9 +1,22 @@
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-open-sans;
+  font-weight: 400;
+}
+
+.bg-dark-green {
+  background: $color-dark-green;
+}
+
+.bg-white {
+  background: $color-white;
 }
