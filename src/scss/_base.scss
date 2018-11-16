@@ -51,6 +51,20 @@ h6 {
   background: $color-dark-green;
 }
 
+.bg-dark {
+  background: $color-dark;
+}
+
+.bg-grey {
+  background: $color-dlight-grey;
+}
+
 .bg-white {
   background: $color-white;
+}
+
+
+// flex
+.flex {
+  display: flex;
 }
