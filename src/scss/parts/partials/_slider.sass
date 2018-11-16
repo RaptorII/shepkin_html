@@ -1,0 +1,47 @@
+.slider
+  .slide
+    &__info
+      position: absolute
+      width: 100%
+      bottom: 0
+    &__txt
+      background: $color-red
+      font-family: $font-monserat
+      color: $color-white
+      padding: 30px
+      opacity: 0.75
+      h2
+        border-bottom: 2px solid $color-white
+        text-transform: uppercase
+
+  .slick
+    &-dots
+      list-style: none
+      display: flex
+      justify-content: center
+      margin: 35px auto
+      li
+        padding: 21px
+        margin: 10px
+        background: rgba($color-dark-green, .7)
+        transition: $trans-main
+        position: relative
+        &:before
+          content: ""
+          background-color: $color-dark
+          width: 34px
+          height: 34px
+          position: absolute
+          top: 4px
+          left: 4px
+          transition: $trans-main
+        &:hover
+          transition: $trans-main
+          background: rgba($color-dark-green, 1)
+          &:before
+            content: ""
+            transition: $trans-main
+            background-color: $color-grey
+            cursor: pointer
+        button
+          display: none
