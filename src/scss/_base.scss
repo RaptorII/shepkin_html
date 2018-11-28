@@ -4,6 +4,16 @@
   box-sizing: inherit;
 }
 
+* {
+  outline: 0 !important;
+}
+
+*::-moz-focus-outer,
+*::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
 html {
   box-sizing: border-box;
   font-family: $font-open-sans;

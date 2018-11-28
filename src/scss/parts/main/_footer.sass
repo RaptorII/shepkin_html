@@ -1,2 +1,23 @@
 .footer
   color: $color-white
+  &__pad
+    padding: 50px 0
+  ul
+    list-style: none
+    padding: 0
+    text-align: center
+
+  .ico
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 1px solid $color-light-grey
+    fill: $color-light-grey
+    background: $color-dark
+    padding: 15px
+    transition: $trans-main
+    &:hover
+      border: 1px solid $color-white
+      fill: $color-white
+      background: $color-ddark-green
+      padding: 13px

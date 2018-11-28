@@ -4,62 +4,61 @@
 
   .slider
     &-item
+      margin-top: -150px
       .slick-slide
         img
           max-width: 100%
+          max-height: 100%
           //border: 1px solid $color-dark-grey
           margin: 0 auto
 
       .slick-slide
-        background: white
+        background: rgba($color-white, .75)
         padding: 20px
         margin: 20px
-        //img
-          width: 210px
-          height: 150px
-          max-width: 210px
-          max-height: 150px
-          margin: 0 auto
-          border: 1px solid $color-dark-grey
-        //a
+        height: 250px
+
+      .slick-arrow
+        position: absolute
+        background: transparent
+
+      .slick-prev,
+      .slick-next
+        font-size: 0
+        border-radius: 50%
+        border: 1px solid transparent
+        //width: 62px
+        //height: 62px
+        top: 50%
+        color: white
+        transform: translatey(-50%)
+        transition: $trans-main
+        z-index: 1500
+        &:before
+          content: url(../images/sprites/svg/angle-left.svg)
           display: block
-
-        .slick-arrow
-          position: absolute
-          background: transparent
-
-        .slick-prev,
-        .slick-next
-          font-size: 0
-          border-radius: 50%
-          border: 1px solid transparent
-          width: 62px
-          height: 62px
-          top: 50%
-          color: white
-          transform: translatey(-50%)
+          width: 25px
+          //height: 25px
+          //margin: -33px 0px 0px 7px
           transition: $trans-main
-          z-index: 1500
+          opacity: .5
+        &:hover
           &:before
-            content: url(../images/sprites/svg/angle-left.svg)
-            display: block
-            width: 25px
-            height: 25px
-            margin: -33px 0px 0px 7px
-          &:hover
-            border: 1px solid transparent
+            transition: $trans-main
+            opacity: 1
+            //border: 1px solid $color-dark-grey
 
-        .slick-prev
-          left: -60px
-        .slick-next
-          right: -60px
-          &:before
-            content: url(../images/sprites/svg/angle-right.svg)
-            margin: -33px 0px 0px 15px
+      .slick-prev
+        left: -60px
+      .slick-next
+        right: -60px
+        &:before
+          content: url(../images/sprites/svg/angle-right.svg)
+          //margin: -33px 0px 0px 15px
 
 @media only screen and (min-width: 700px)
   .slider
     &-item-nav
       .slick-list
-      width: 80%
-      margin: 20px auto
+        width: 80%
+        margin: 20px auto

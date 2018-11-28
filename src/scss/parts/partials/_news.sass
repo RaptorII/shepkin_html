@@ -6,12 +6,38 @@
     &-img
       img
         margin: 10px 20px 10px 0
-    &-head
+    &-head, a
       font-family: $font-open-sans-condensed
       color: $color-dark-head-news
       font-size: 32px
       font-weight: 700
       text-align: left
+      a
+        display: inline-block
+        text-decoration: none
+        transition: $trans-main
+        position: relative
+        &:after
+          content: ""
+          position: absolute
+          transition: $trans-main
+          bottom: 2px
+          height: 2px
+          width: 0
+          left: 50%
+          background: transparent
+
+        &:hover, &:focus
+          color: $color-dark
+          &:after
+            content: ""
+            display: inline-block
+            transition: $trans-main
+            text-decoration: underline
+            width: 100%
+            left: 0
+            background: $color-ddark-green
+
     &-date
       font-family: $font-open-sans-condensed
       font-size: 14px
