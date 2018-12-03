@@ -4,8 +4,17 @@
     padding: 50px 0
   ul
     list-style: none
-    padding: 0
-    text-align: center
+    padding: 0 0 0 20%
+    &.social
+      padding: 0
+    li + li
+      padding-top: 15px
+
+    a
+      text-decoration: none
+
+  h6
+    margin: 15px 0 15px 20px
 
   .ico
     width: 60px
@@ -21,3 +30,42 @@
       fill: $color-white
       background: $color-ddark-green
       padding: 13px
+
+  p
+    font-size: 14px
+
+.social
+  list-style: none
+  padding: 0
+  text-align: center
+  li
+    margin: 5px
+    display: inline-block
+
+.line-vertical + .line-vertical
+  border-left: 2px solid $color-white
+
+.line-gorizontal
+  border-top: 2px solid $color-white
+
+.address
+  ul
+    padding: 0
+    li
+      line-height: 100%
+      display: flex
+    li + li
+      padding-top: 15px
+
+  .one-col,
+  .two-col
+    display: inline-block
+    float: left
+  .one-col
+    width: 40%
+    min-width: 100px
+  .two-col
+    width: 60%
+    min-width: 210px
+    a
+      display: block

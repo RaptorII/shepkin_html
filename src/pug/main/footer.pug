@@ -1,7 +1,7 @@
 .footer.bg-dark-green.footer__pad
     .grid-container
         .grid-x
-            .cell.small-12.large-3
+            .cell.small-12.large-3.line-vertical
                 ul
                     li
                         a(href="")
@@ -9,7 +9,7 @@
                     li
                         a(href="")
                             | Новини
-            .cell.small-12.large-3
+            .cell.small-12.large-3.line-vertical
                 ul
                     li
                         a(href="")
@@ -27,7 +27,7 @@
                         a(href="")
                             | Персонал
 
-            .cell.small-12.large-3
+            .cell.small-12.large-3.line-vertical
                 ul
                     li
                         a(href="")
@@ -39,7 +39,7 @@
                         a(href="")
                             | Концерти
 
-            .cell.small-12.large-3
+            .cell.small-12.large-3.line-vertical
                 ul
                     li
                         a(href="")
@@ -48,10 +48,10 @@
                         a(href="")
                             | Контакти
 
-.footer.bg-dark-green
+.footer.bg-dark-green.line-gorizontal.footer__pad
     .grid-container
         .grid-x
-            .cell.small-12.large-4
+            .cell.small-12.large-4.line-vertical
                 ul.social
                     li
                         a(href="")
@@ -63,29 +63,68 @@
                         a(href="")
                             +svg("instagram").ico
 
-            .cell.small-12.large-4
+            .cell.small-12.large-4.line-vertical
                 .address
-                    .contacts__info-address
-                        | Адреса: Україна, 40000, м. Суми, пл. Театральна, 1.
-                    .contacts__info-phone
-                        | Телефони дирекції:
-                        a(href="tel:380542222057")
-                            | +380 (542) 22-20-57
-                        | (тел./факс),
-                        <br>
-                        a(href="tel:380542225458")
-                            | 22-54-58 (факс).
-                    .contacts__info-admin
-                        | Адміністратор: +380 (542) 22-30-14.
-                    .contacts__info-cashbox
-                        | Каса: +380 (542) 22-16-88.
-                    .contacts__info-mail
-                        | shepkindrama@gmail.com
+                    ul
+                        li
+                            .one-col
+                                | Адреса:
+                            .two-col
+                                | Україна, 40000, м. Суми, пл. Театральна, 1.
 
-            .cell.small-12.large-4
-                .form__msg
+                        li
+                            .one-col
+                                | Телефони дирекції:
+                            .two-col
+                                a(href="tel:380542222057")
+                                    | +380 (542) 22-20-57
+                                a(href="tel:380542225458")
+                                    | +380 (542) 22-54-58 (факс).
 
-.footer.bg-dark
+                        li
+                            .one-col
+                                | Адміністратор:
+                            .two-col
+                                a(href="tel:380542223014")
+                                    | +380 (542) 22-30-14.
+
+                        li
+                            .one-col
+                                | Каса:
+                            .two-col
+                                a(href="tel:380542221688")
+                                    | +380 (542) 22-16-88.
+
+                        li
+                            .one-col
+                                | e-mail:
+                            .two-col
+                                a(href="mailto:shepkindrama@gmail.com")
+                                    | shepkindrama@gmail.com
+
+            .cell.small-12.large-4.line-vertical
+                h6
+                    | Есть вопросы? Напишите нам!
+
+                form.form-message(action="/request" method="post")
+                    input(type="hidden" name="_csrf-frontend" value="MrBMQXZ_jwyd7XUaIY7H1z6ChZ2rvCqLfVKJj1jX-59e9nsEMTDsaMeUA0lSyfSeCLey3p_ZTuRQOOT2HI6orw==")
+
+                    .form-group.label-floating.field-request-name
+                        input(type="text" id="request-name" class="form-control" name="Request[name]" placeholder="Имя")
+                        .help-block
+
+                    .form-group.label-floating.field-request-phone.required
+                        input(type="text" id="request-phone" class="form-control" name="Request[mail]" placeholder="E-mail" aria-required="true")
+                        .help-block
+
+                    .form-group.label-floating.field-request-message.has-success
+                        textarea(id="request-message" class="form-control" name="Request[message]" rows="6" cols="50" placeholder="Введите сообщение" aria-invalid="false")
+                        .help-block
+
+                    button(type="submit" class="btn-submit")
+                        | Отправить
+
+.footer.bg-dark.line-gorizontal.footer__pad
     .grid-container
         .grid-x
             .cell.small-12.large-2
@@ -106,5 +145,4 @@
                     | Наповнення – Ярослав Янченко та Кирил Поздняков.
                 p
                     | Фотографи – Андрій Сечін, Максим Криштоп,
-                p
                     | Олексій Целік та Анатолій Красовський.

@@ -13,12 +13,14 @@
 
 // Main
 @import "parts/main/header";
+@import "parts/main/arrow_up";
 @import "parts/main/nav";
 @import "parts/main/menu";
 @import "parts/main/footer";
 @import "parts/main/editor";
 
 // Partials
+@import "parts/partials/form-message";
 @import "parts/partials/toggle";
 @import "parts/partials/slider";
 @import "parts/partials/map";
