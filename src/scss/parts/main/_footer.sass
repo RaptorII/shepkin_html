@@ -7,11 +7,37 @@
     padding: 0 0 0 20%
     &.social
       padding: 0
-    li + li
-      padding-top: 15px
+      a
+        &:hover, &:focus
+          &:after
+            content: none
 
     a
+      display: inline-block
       text-decoration: none
+      transition: $trans-main
+      position: relative
+      padding: 5px 0
+      &:after
+        content: ""
+        position: absolute
+        transition: $trans-main
+        bottom: 0px
+        height: 2px
+        width: 0
+        left: 50%
+        background: transparent
+
+      &:hover, &:focus
+        color: $color-white
+        &:after
+          content: ""
+          display: inline-block
+          transition: $trans-main
+          text-decoration: underline
+          width: 100%
+          left: 0
+          background: $color-white
 
   h6
     margin: 15px 0 15px 20px
@@ -64,8 +90,35 @@
   .one-col
     width: 40%
     min-width: 100px
+    font-family: $font-open-sans-condensed
+    font-weight: 700
+    text-transform: uppercase
   .two-col
     width: 60%
     min-width: 210px
     a
       display: block
+      text-decoration: none
+      transition: $trans-main
+      position: relative
+      padding: 5px 0
+      &:after
+        content: ""
+        position: absolute
+        transition: $trans-main
+        bottom: 0
+        height: 2px
+        width: 0
+        left: 50%
+        background: transparent
+
+      &:hover, &:focus
+        color: $color-white
+        &:after
+          content: ""
+          display: inline-block
+          transition: $trans-main
+          text-decoration: underline
+          width: 100%
+          left: 0
+          background: $color-white

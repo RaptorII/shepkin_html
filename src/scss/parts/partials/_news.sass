@@ -9,6 +9,7 @@
     &-head, a
       font-family: $font-open-sans-condensed
       color: $color-dark-head-news
+      text-transform: uppercase
       font-size: 32px
       font-weight: 700
       text-align: left
@@ -44,7 +45,23 @@
       color: $color-red
     &-txt
       color: $color-black
-      font-size: 20px
+      font-size: 16px
+
+    &-button
+      text-align: right
+      .button
+        display: inline-table
+        a
+          text-align: center
+          font-family: $font-open-sans
+          font-size: 20px
+          font-weight: 400
+          text-transform: none
+          margin-bottom: 0
+          border: 1px solid $color-white
+          @include haf()
+            transition: $trans-main
+            border: 1px solid $color-ddark-green
 
   &__short
     background: $color-dark-green
@@ -63,8 +80,36 @@
     &-head
       font-family: $font-open-sans-condensed
       color: $color-white
-      font-size: 22px
+      font-size: 20px
       font-weight: 700
+      text-transform: uppercase
+      a
+        text-transform: uppercase
+        font-size: 20px
+        font-family: $font-open-sans-condensed
+        text-decoration: none
+        transition: $trans-main
+        position: relative
+        &:after
+          content: ""
+          position: absolute
+          transition: $trans-main
+          bottom: 2px
+          height: 2px
+          width: 0
+          left: 50%
+          background: transparent
+
+        &:hover, &:focus
+          color: $color-white
+          &:after
+            content: ""
+            display: inline-block
+            transition: $trans-main
+            text-decoration: underline
+            width: 100%
+            left: 0
+            background: $color-white
     &-date
       font-family: $font-open-sans-condensed
       font-size: 20px

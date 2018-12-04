@@ -59,6 +59,7 @@
 		"npm-check-updates": "2.14.2",
 		"npu": "1.2.2",
 		"polyfill": "0.1.0",
+		"scrollmagic": "2.0.6",
 		"svg4everybody": "2.1.9"
 	}
 }
