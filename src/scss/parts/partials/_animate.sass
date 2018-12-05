@@ -1,0 +1,95 @@
+@keyframes show-up
+  0%
+    opacity: 0
+    transform: translateY(50px)
+
+  50%
+    opacity: 0.4
+  //transform: translateY(30px)
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-right
+  0%
+    opacity: 0
+    transform: translateX(50px)
+
+  50%
+    opacity: 0.4
+    transform: translateX(30px)
+
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+@keyframes show-down
+  0%
+    opacity: 0
+    transform: translateY(-50px)
+
+  50%
+    opacity: 0.4
+    transform: translateY(-30px)
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-left
+  0%
+    opacity: 0
+    transform: translateX(-50px)
+
+  50%
+    opacity: 0.4
+    transform: translateX(-30px)
+
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+.animate
+  opacity: 0
+  transition: $mainTrans
+
+  &.animate-up
+    transform: translateY(50px)
+    &.fade-in
+      animation: show-up 1s
+      transform: translateY(0)
+      opacity: 1
+
+  &.animate-right
+    transform: translateX(100px)
+    &.fade-in
+      animation: show-right .5s ease-in
+      transform: translateX(0)
+      opacity: 1
+
+  &.animate-down
+    transform: translateY(-100px)
+    &.fade-in
+      animation: show-down .5s ease-in
+      transform: translateY(0)
+      opacity: 1
+  &.animate-left
+    transform: translateX(-100px)
+    &.fade-in
+      animation: show-left .5s ease-in
+      transform: translateZ(0)
+      opacity: 1
+
+//stop animation
+@media screen and (max-width: 768px)
+  .animate
+    opacity: 1
+    &.animate-up
+      transform: translateY(0)
+    &.animate-right
+      transform: translateX(0)
+    &.animate-down
+      transform: translateY(0)
+    &.animate-left
+      transform: translateX(0)
