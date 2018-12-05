@@ -5,7 +5,43 @@
 
   50%
     opacity: 0.4
-  //transform: translateY(30px)
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-up-one
+  0%
+    opacity: 0
+    transform: translateY(50px)
+
+  50%
+    opacity: 0
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-up-two
+  0%
+    opacity: 0
+    transform: translateY(50px)
+
+  66%
+    opacity: 0
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-up-three
+  0%
+    opacity: 0
+    transform: translateY(50px)
+
+  75%
+    opacity: 0
+
 
   100%
     opacity: 1
@@ -18,7 +54,6 @@
 
   50%
     opacity: 0.4
-    transform: translateX(30px)
 
   100%
     opacity: 1
@@ -31,7 +66,6 @@
 
   50%
     opacity: 0.4
-    transform: translateY(-30px)
 
   100%
     opacity: 1
@@ -52,7 +86,7 @@
 
 .animate
   opacity: 0
-  transition: $mainTrans
+  animation-play-state: paused
 
   &.animate-up
     transform: translateY(50px)
@@ -62,24 +96,38 @@
       opacity: 1
 
   &.animate-right
-    transform: translateX(100px)
+    transform: translateX(50px)
     &.fade-in
-      animation: show-right .5s ease-in
+      animation: show-right 1s ease-in
       transform: translateX(0)
-      opacity: 1
 
   &.animate-down
-    transform: translateY(-100px)
+    transform: translateY(-50px)
     &.fade-in
-      animation: show-down .5s ease-in
+      animation: show-down 1s ease-in
       transform: translateY(0)
-      opacity: 1
+
   &.animate-left
-    transform: translateX(-100px)
+    transform: translateX(-50px)
     &.fade-in
-      animation: show-left .5s ease-in
-      transform: translateZ(0)
+      animation: show-left 1s ease-in
+      transform: translateX(0)
+
+  &.fade-in
+
+    &.delay-One
+      animation: show-up-one 2s ease-in 1
+      animation-play-state: running
       opacity: 1
+    &.delay-Two
+      animation: show-up-two 3s ease-in 1
+      animation-play-state: running
+      opacity: 1
+    &.delay-Three
+      animation: show-up-three 4s ease-in 1
+      animation-play-state: running
+      opacity: 1
+
 
 //stop animation
 @media screen and (max-width: 768px)

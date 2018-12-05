@@ -249,7 +249,7 @@ html(class=html.classList id=html.idList)&attributes(html.attrs)
         block body-start
         block content
         block arrow__up
-            a(href="#top-anchor" class="arrow-up")
+            a(href="#top-anchor" class="arrow-up" style="display: none;")
                 svg(class="arrow_up" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 18 17")
                     g(class="arrow_up__group" transform="matrix(0 -1 -1 0 17.19 16.56)")
                         polygon(class="arrow_up__polygon-one arrow" points="7.761 15.31 6.904 14.32 14.29 8.342 6.908 2.428 7.76 1.436 16.37 8.339")
@@ -264,6 +264,8 @@ html(class=html.classList id=html.idList)&attributes(html.attrs)
             script(src="js/template.js?v=" + Date.now())
 
             script(src="js/scrollmagick/ScrollMagic.min.js?v=" + Date.now())
+            script(src="js/scrollmagick/jquery.ScrollMagic.min.js?v=" + Date.now())
+            script(src="js/scrollmagick/animation.gsap.min.js?v=" + Date.now())
             script(src="js/scrollmagick/debug.addIndicators.min.js?v=" + Date.now())
             //script(src="js/main.js?v=" + Date.now())
 
