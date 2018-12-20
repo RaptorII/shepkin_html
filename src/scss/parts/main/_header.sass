@@ -13,6 +13,7 @@
     &-main,
     &-cashbox
       font-size: 16px
+      display: block
 
   &__ico
     width: 30px
@@ -30,9 +31,20 @@
     line-height: 100%
 
   a + a
-    margin-left: 20px
+    margin-left: 0
+
+@media screen and (min-width: 640px)
+  .header__phone
+    &-main,
+    &-cashbox
+      display: unset
 
 @media screen and (min-width: 768px)
+  .header
+    a + a
+      margin-left: 20px
+
+@media screen and (min-width: 990px)
   .header
     height: 50px
     &__phone

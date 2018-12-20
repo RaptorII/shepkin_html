@@ -1,4 +1,9 @@
 .slider
+  &:before
+    content: ""
+    clear: both
+    display: table
+    width: 100%
   .slide
     &__info
       position: absolute
@@ -14,12 +19,18 @@
         border-bottom: 2px solid $color-white
         text-transform: uppercase
 
+    &__img
+      display: flex
+      justify-content: center
+      align-items: center
+
   .slick
     &-dots
       list-style: none
       display: flex
       justify-content: center
       margin: 35px auto
+      padding: 0
       li
         padding: 21px
         margin: 10px

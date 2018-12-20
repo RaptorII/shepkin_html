@@ -13,10 +13,10 @@
 @keyframes show-up-one
   0%
     opacity: 0
-    transform: translateY(50px)
 
   50%
     opacity: 0
+    transform: translateY(50px)
 
   100%
     opacity: 1
@@ -25,10 +25,10 @@
 @keyframes show-up-two
   0%
     opacity: 0
-    transform: translateY(50px)
 
   66%
     opacity: 0
+    transform: translateY(50px)
 
   100%
     opacity: 1
@@ -37,11 +37,10 @@
 @keyframes show-up-three
   0%
     opacity: 0
-    transform: translateY(50px)
 
   75%
     opacity: 0
-
+    transform: translateY(50px)
 
   100%
     opacity: 1
@@ -91,7 +90,7 @@
   &.animate-up
     transform: translateY(50px)
     &.fade-in
-      animation: show-up 1s
+      animation: show-up .5s
       transform: translateY(0)
       opacity: 1
 
@@ -116,15 +115,15 @@
   &.fade-in
 
     &.delay-One
-      animation: show-up-one 2s ease-in 1
+      animation: show-up-one 1s ease-in 1
       animation-play-state: running
       opacity: 1
     &.delay-Two
-      animation: show-up-two 3s ease-in 1
+      animation: show-up-two 1.5s ease-in 1
       animation-play-state: running
       opacity: 1
     &.delay-Three
-      animation: show-up-three 4s ease-in 1
+      animation: show-up-three 2s ease-in 1
       animation-play-state: running
       opacity: 1
 

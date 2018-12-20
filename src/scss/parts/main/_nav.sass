@@ -1,5 +1,10 @@
 .nav
   border-bottom: 2px solid $color-red
+  &:after
+    content: ""
+    clear: both
+    display: table
+    width: 100%
   &__fixed
     transition: $trans-main
     position: fixed

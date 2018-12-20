@@ -5,15 +5,16 @@
 
     &-txt
       color: $color-white
-      position: absolute
       background: $color-ddark-green
       opacity: 0.75
-      height: 120%
-      padding: 0 30px
-      top: -10%
+      padding: 0 10px
 
-.address
-  padding: 0 20px
+  h2
+    margin: 10px 0
+
+  .address
+    padding: 0 20px 20px 20px
+    margin-bottom: 20px
 
 .contacts
   &__info-address,
@@ -22,3 +23,24 @@
   &__info-cashbox,
   &__info-mail
     padding-top: 15px
+
+@media screen and (min-width: 990px)
+  .contacts
+    &__info
+      .address
+        padding: 0
+
+      &-txt
+        position: absolute
+        height: 120%
+        padding: 0 30px
+        top: -10%
+
+    h2
+      margin: 40px 0
+
+@media screen and (min-width: 1200px)
+  .contacts
+    &__info
+      .address
+        padding: 0 20px 20px 20px
