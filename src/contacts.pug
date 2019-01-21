@@ -1,0 +1,22 @@
+extends pug/base
+
+append vars
+    - html.classList.push('page-index')
+
+block content
+
+    <!-- header -->
+    include pug/main/header
+    <!-- end header -->
+
+    <!-- news -->
+    include pug/pages/contacts
+    <!-- end news -->
+
+    <!-- map -->
+    include pug/partials/map
+    <!-- end map -->
+
+    <!-- header -->
+    include pug/main/footer
+    <!-- end header -->
