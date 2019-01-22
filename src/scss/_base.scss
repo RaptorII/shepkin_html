@@ -75,8 +75,26 @@ h6 {
   background: $color-white;
 }
 
-
 // flex
 .flex {
   display: flex;
+}
+
+.pagination {
+  text-align: center;
+  padding: 0;
+  margin: 3em 0;
+
+  .current {
+    background: $color-dark-green
+  }
+
+  a, li {
+    cursor: pointer;
+  }
+
+  a:focus, a:hover {
+    color: $color-dark
+  }
+
 }

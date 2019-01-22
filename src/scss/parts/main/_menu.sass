@@ -88,6 +88,7 @@
       list-style: none
       padding-left: 25px
       padding-right: 25px
+      padding-bottom: 15px
       &:after
         content: ""
         height: 20px
@@ -112,6 +113,16 @@
         transition: $trans-main
         z-index: -1
 
+.nav__fixed
+  .navigation
+    a, span
+      transition: $trans-main
+      opacity: .7
+      padding: 0
+    &__drop
+      .drop
+        a
+          padding: 15px 0
 
 @media screen and (max-width: 990px)
   .navigation
