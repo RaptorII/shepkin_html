@@ -59,16 +59,28 @@ if ($(document.body).width() >= 989) {
         //console.log('scroll =' + $('nav').scrollTop());
         //console.log('header =' + $('header').height());
 
-        if ($(this).scrollTop() > ($('header').height() + 0)) {
+        if ($(this).scrollTop() > ($('header').height() + 50)) {
             $('.nav').addClass('nav__fixed');
-            $('body').css('margin-top', $('.nav').height() + 'px');
+            // $('body').css('margin-top', $('.nav').height() + 'px');
         }
         else {
             $('.nav').removeClass('nav__fixed');
-            $('body').css('margin-top', 0).removeAttr('margin-top');
+            // $('body').css('margin-top', 0).removeAttr('margin-top');
+			$('body').animate({'margin-top': '0'}, 'slow');
         }
     });
 }
+
+/*
+$(document).ready(function(){
+	$('div').mouseenter(function(){
+		$(this).animate({'margin-left': '200'}, 'slow');
+	});
+	$('div').mouseleave(function(){
+		$(this).animate({'margin-left': '0'}, 'slow');
+	});
+});
+*/
 
 /**
  * Close popup caments window
