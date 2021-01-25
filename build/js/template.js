@@ -60,13 +60,12 @@ if ($(document.body).width() >= 989) {
         //console.log('header =' + $('header').height());
 
         if ($(this).scrollTop() > ($('header').height() + 0)) {
-            $('nav').addClass('nav__fixed');
-            $('body').css('margin-top', $('nav').height() + 'px');
+            $('.nav').addClass('nav__fixed');
+            $('body').css('margin-top', $('.nav').height() + 'px');
         }
         else {
-            $('nav').removeClass('nav__fixed');
+            $('.nav').removeClass('nav__fixed');
             $('body').css('margin-top', 0).removeAttr('margin-top');
-            ;
         }
     });
 }
